@@ -30,7 +30,7 @@ export class DynamicPageComponent {
 
   isValidField( field: string ): boolean | null{
     return this.myForm.controls[field].errors
-      && this.myForm.controls[field].touched;
+    && this.myForm.controls[field].touched;
   }
 
   isValidFieldInArray( formArray: FormArray, index: number ) {
